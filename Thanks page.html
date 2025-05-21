@@ -43,7 +43,32 @@
             border-left: 4px solid #DA26B3;
         }
     </style>
-<section class="hero-gradient min-h-screen flex items-center pt-20">
+
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full bg-white shadow-sm z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+			    <div style="max-width: 180px; width: 50%; height: auto;">	
+                    <img src="images/Logo mayara.png">
+				</div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#sobre" class="font-medium hover:text-primary transition">Sobre</a>
+                    <a href="#beneficios" class="font-medium hover:text-primary transition">Benefícios</a>
+                    <a href="#depoimentos" class="font-medium hover:text-primary transition">Depoimentos</a>
+                    <a href="#faq" class="font-medium hover:text-primary transition">FAQ</a>
+                    <a href="#contato" class="font-medium hover:text-primary transition">Contato</a>
+                </nav>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-2xl text-dark"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-screen flex items-center pt-20">
         <div class="container mx-auto px-10 py-10 md:py-0 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-12 md:mb-0">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
@@ -71,3 +96,70 @@
             </div>
         </div>
     </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Conheça Mayara Aguera</h2>
+                <div class="w-24 h-1 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Mayara Aguera" class="rounded-full w-64 h-64 object-cover border-4 border-primary shadow-lg">
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h3 class="text-2xl font-bold mb-6">Especialista em transformações físicas de alto nível</h3>
+                    <p class="text-lg mb-6">
+                        Com mais de 8 anos de experiência em treinamento personalizado, Mayara já ajudou centenas de mulheres a alcançarem seus objetivos estéticos e de performance. Formada em Educação Física e pós-graduada em Fisiologia do Exercício, ela combina ciência e prática para criar programas verdadeiramente personalizados.
+                    </p>
+                    <p class="text-lg mb-6">
+                        Seu método vai além dos exercícios - é uma abordagem completa que considera sua rotina, metabolismo, histórico esportivo e objetivos específicos para criar um plano que realmente funciona.
+                    </p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="bg-white p-4 rounded-lg shadow text-center">
+                            <div class="text-primary text-3xl mb-2">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <p class="font-bold">+8 anos</p>
+                            <p class="text-sm">de experiência</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow text-center">
+                            <div class="text-primary text-3xl mb-2">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <p class="font-bold">+200</p>
+                            <p class="text-sm">clientes transformadas</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow text-center">
+                            <div class="text-primary text-3xl mb-2">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                            <p class="font-bold">100%</p>
+                            <p class="text-sm">personalizado</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow text-center">
+                            <div class="text-primary text-3xl mb-2">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <p class="font-bold">360°</p>
+                            <p class="text-sm">abordagem completa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="images/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank">DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=Zzuko013/mayara-site" style="color: #fff;text-decoration: underline;" target="_blank">Remix</a></p>
+</body></html>
