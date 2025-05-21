@@ -96,61 +96,72 @@
             </div>
         </div>
     </section>
-
-    <!-- About Section -->
-    <section id="sobre" class="py-20 bg-gray-50">
+ <footer class="bg-dark text-white py-12">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Conheça Mayara Aguera</h2>
-                <div class="w-24 h-1 bg-primary mx-auto"></div>
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="text-2xl font-bold mb-2">MAYARA <span class="text-primary">AGUERA</span></div>
+                    <p class="text-gray-400">Personal Trainer Premium</p>
+                </div>
+                
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                </div>
+                
+                <div class="text-sm text-gray-400">
+                    <a href="#" class="hover:text-white transition mr-4">Política de Privacidade</a>
+                    <a href="#" class="hover:text-white transition">Termos de Uso</a>
+                </div>
             </div>
             
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
-                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Mayara Aguera" class="rounded-full w-64 h-64 object-cover border-4 border-primary shadow-lg">
-                </div>
-                <div class="md:w-2/3 md:pl-12">
-                    <h3 class="text-2xl font-bold mb-6">Especialista em transformações físicas de alto nível</h3>
-                    <p class="text-lg mb-6">
-                        Com mais de 8 anos de experiência em treinamento personalizado, Mayara já ajudou centenas de mulheres a alcançarem seus objetivos estéticos e de performance. Formada em Educação Física e pós-graduada em Fisiologia do Exercício, ela combina ciência e prática para criar programas verdadeiramente personalizados.
-                    </p>
-                    <p class="text-lg mb-6">
-                        Seu método vai além dos exercícios - é uma abordagem completa que considera sua rotina, metabolismo, histórico esportivo e objetivos específicos para criar um plano que realmente funciona.
-                    </p>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        <div class="bg-white p-4 rounded-lg shadow text-center">
-                            <div class="text-primary text-3xl mb-2">
-                                <i class="fas fa-user-graduate"></i>
-                            </div>
-                            <p class="font-bold">+8 anos</p>
-                            <p class="text-sm">de experiência</p>
-                        </div>
-                        <div class="bg-white p-4 rounded-lg shadow text-center">
-                            <div class="text-primary text-3xl mb-2">
-                                <i class="fas fa-medal"></i>
-                            </div>
-                            <p class="font-bold">+200</p>
-                            <p class="text-sm">clientes transformadas</p>
-                        </div>
-                        <div class="bg-white p-4 rounded-lg shadow text-center">
-                            <div class="text-primary text-3xl mb-2">
-                                <i class="fas fa-dumbbell"></i>
-                            </div>
-                            <p class="font-bold">100%</p>
-                            <p class="text-sm">personalizado</p>
-                        </div>
-                        <div class="bg-white p-4 rounded-lg shadow text-center">
-                            <div class="text-primary text-3xl mb-2">
-                                <i class="fas fa-heartbeat"></i>
-                            </div>
-                            <p class="font-bold">360°</p>
-                            <p class="text-sm">abordagem completa</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2023 Mayara Aguera - Personal Trainer. Todos os direitos reservados.</p>
+                <p class="mt-2">Desenvolvido com <i class="fas fa-heart text-primary"></i> para mulheres que buscam evolução constante.</p>
             </div>
         </div>
-    </section>
+    </footer>
+
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-item').forEach(item => {
+            const question = item.querySelector('h3');
+            const answer = item.querySelector('.answer');
+            const icon = question.querySelector('i');
+            
+            question.addEventListener('click', () => {
+                const isOpen = answer.classList.contains('hidden');
+                
+                // Close all other FAQs
+                document.querySelectorAll('.faq-item').forEach(faq => {
+                    if (faq !== item) {
+                        faq.querySelector('.answer').classList.add('hidden');
+                        faq.querySelector('i').classList.remove('fa-minus');
+                        faq.querySelector('i').classList.add('fa-plus');
+                    }
+                });
+                
+                // Toggle current FAQ
+                if (isOpen) {
+                    answer.classList.remove('hidden');
+                    icon.classList.remove('fa-plus');
+                    icon.classList.add('fa-minus');
+                } else {
+                    answer.classList.add('hidden');
+                    icon.classList.remove('fa-minus');
+                    icon.classList.add('fa-plus');
+                }
+            });
+        });
+        
+        // Smooth scrolling for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -163,3 +174,4 @@
     </script>
 <p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="images/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank">DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=Zzuko013/mayara-site" style="color: #fff;text-decoration: underline;" target="_blank">Remix</a></p>
 </body></html>
+
