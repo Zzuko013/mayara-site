@@ -4,7 +4,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Mayara Aguera - Personal Trainer Premium</title>
 <script src="https://cdn.tailwindcss.com"></script>
-<link href="css/all.min.css" rel="stylesheet"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 <script>
         tailwind.config = {
             theme: {
@@ -47,24 +47,27 @@
 </head>
 <body class="bg-white text-gray-800">
 <!-- Header/Navigation -->
+<!-- 🔥 Header com menu -->
 <header class="fixed w-full bg-white shadow-sm z-50">
-<div class="container mx-auto px-6 py-4">
-<div class="flex items-center justify-between">
-<div style="max-width: 180px; width: 50%; height: auto;">
-<img src="images/Logo mayara.png"/>
-</div>
-<nav class="hidden md:flex space-x-8">
-<a class="font-medium hover:text-primary transition" href="#sobre">Sobre</a>
-<a class="font-medium hover:text-primary transition" href="#beneficios">Benefícios</a>
-<a class="font-medium hover:text-primary transition" href="#depoimentos">Depoimentos</a>
-<a class="font-medium hover:text-primary transition" href="#faq">FAQ</a>
-<a class="font-medium hover:text-primary transition" href="#contato">Contato</a>
-</nav>
-<button class="md:hidden focus:outline-none">
-<i class="fas fa-bars text-2xl text-dark"></i>
-</button>
-</div>
-</div>
+  <div class="container mx-auto px-6 py-4">
+    <div class="flex items-center justify-between">
+      <div style="max-width: 180px;">
+        <img src="images/Logo mayara.png" alt="Logo Mayara"/>
+      </div>
+
+      <nav id="nav-menu" class="hidden md:flex space-x-8">
+        <a href="#sobre" class="font-medium hover:text-primary">Sobre</a>
+        <a href="#beneficios" class="font-medium hover:text-primary">Benefícios</a>
+        <a href="#depoimentos" class="font-medium hover:text-primary">Depoimentos</a>
+        <a href="#faq" class="font-medium hover:text-primary">FAQ</a>
+        <a href="#contato" class="font-medium hover:text-primary">Contato</a>
+      </nav>
+
+      <button id="menu-toggle" class="md:hidden focus:outline-none">
+        <i class="fas fa-bars text-2xl text-dark"></i>
+      </button>
+    </div>
+  </div>
 </header>
 <!-- Hero Section -->
 <section class="hero-gradient min-h-screen flex items-center pt-20">
@@ -411,76 +414,98 @@
 </div>
 </div>
 </section>
-<!-- Contact Section -->
+<!-- 🔥 Seção de Contato -->
 <section class="py-20 bg-gray-50" id="contato">
-<div class="container mx-auto px-4">
-<div class="max-w-6xl mx-auto">
-<div class="text-center mb-16">
-<h2 class="text-3xl md:text-4xl font-bold mb-4">Pronta para Transformar Seu Corpo?</h2>
-<p class="text-xl text-gray-600">
-                        Agende sua sessão de avaliação gratuita e dê o primeiro passo rumo aos seus objetivos
-                    </p>
-<div class="w-24 h-1 bg-primary mx-auto mt-4"></div>
-</div>
-<div class="bg-white rounded-xl shadow-lg overflow-hidden">
-<div class="md:flex">
-<div class="w-full md:w-1/2 bg-primary text-white p-6 sm:p-8">
-<h3 class="text-2xl font-bold mb-6">Informações de Contato</h3>
-<div class="space-y-6">
-<div class="flex items-start">
-<i class="fas fa-envelope mt-1 mr-4 text-xl"></i>
-<div>
-<p class="font-bold">Email</p>
-<p>contato@mayaraaguera.com</p>
-</div>
-</div>
-<div class="flex items-start">
-<i class="fas fa-phone-alt mt-1 mr-4 text-xl"></i>
-<div>
-<p class="font-bold">Telefone/WhatsApp</p>
-<p>(13) 98146-0889</p>
-</div>
-</div>
-<div class="flex items-start">
-<i class="fas fa-map-marker-alt mt-1 mr-4 text-xl"></i>
-<div>
-<p class="font-bold">Atendimento Presencial</p>
-<p>São paulo - Praia Grande</p>
-</div>
-</div>
-</div>
-<div class="mt-16">
-<h4 class="text-xl font-bold mb-4">Siga Mayara no Instagram</h4>
-<a class="inline-block bg-white text-primary hover:bg-gray-140 font-bold py-3 px-6 rounded-full transition" href="https://www.instagram.com/agueramahpersonal/">
-<i class="fab fa-instagram mr-2"></i> @agueramahpersonal
-                                </a>
-</div>
-</div>
-<div class="w-full p-6 sm:p-8 md:p-12">
-<form action="https://formsubmit.co/988176ee23633d3ca653cc58730f1965" class="space-y-6" method="POST"></form>
-<div>
-<label class="block font-bold mb-2" for="name">Seu Nome</label>
-<input class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" id="name" type="text"/>
-</div>
-<div>
-<label class="block font-bold mb-2" for="email">Seu Email</label>
-<input class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" id="email" type="email"/>
-</div>
-<div>
-<label class="block font-bold mb-2" for="phone">Seu WhatsApp</label>
-<input class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" id="phone" type="tel"/>
-</div>
-<div>
-<label class="block font-bold mb-2" for="message">Como posso te ajudar?</label>
-<textarea class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" id="message" rows="4"></textarea>
-</div>
-<button class="w-full bg-primary hover:bg-opacity-90 text-white font-bold py-4 px-6 rounded-lg transition duration-300" type="submit">
-                                    Agendar Minha Avaliação Gratuita
-				<input name="_next" type="hidden" value="https://zzuko013.github.io/mayara-site/thankspage.html"/>
-</button>
+  <div class="container mx-auto px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Pronta para Transformar Seu Corpo?</h2>
+        <p class="text-xl text-gray-600">
+          Agende sua sessão de avaliação gratuita e dê o primeiro passo rumo aos seus objetivos
+        </p>
+        <div class="w-24 h-1 bg-primary mx-auto mt-4"></div>
+      </div>
 
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="md:flex">
+          <!-- Informações -->
+          <div class="w-full md:w-1/2 bg-primary text-white p-8">
+            <h3 class="text-2xl font-bold mb-6">Informações de Contato</h3>
+
+            <div class="space-y-6">
+              <div class="flex">
+                <i class="fas fa-envelope mt-1 mr-4 text-xl"></i>
+                <div>
+                  <p class="font-bold">Email</p>
+                  <p>contato@mayaraaguera.com</p>
+                </div>
+              </div>
+
+              <div class="flex">
+                <i class="fas fa-phone-alt mt-1 mr-4 text-xl"></i>
+                <div>
+                  <p class="font-bold">WhatsApp</p>
+                  <p>(13) 98146-0889</p>
+                </div>
+              </div>
+
+              <div class="flex">
+                <i class="fas fa-map-marker-alt mt-1 mr-4 text-xl"></i>
+                <div>
+                  <p class="font-bold">Atendimento</p>
+                  <p>São Paulo - Praia Grande</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-12">
+              <h4 class="text-xl font-bold mb-4">Siga no Instagram</h4>
+              <a href="https://www.instagram.com/agueramahpersonal/" target="_blank"
+                 class="inline-block bg-white text-primary font-bold py-3 px-6 rounded-full">
+                <i class="fab fa-instagram mr-2"></i> @agueramahpersonal
+              </a>
+            </div>
+          </div>
 </div>
 </div>
+<!-- 🔥 Formulário -->
+          <div class="w-full p-8 md:p-12">
+            <form action="https://formsubmit.co/988176ee23633d3ca653cc58730f1965" method="POST" class="space-y-6">
+
+              <div>
+                <label for="name" class="block font-bold mb-2">Seu Nome</label>
+                <input type="text" id="name" name="name" required
+                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+              </div>
+
+              <div>
+                <label for="email" class="block font-bold mb-2">Seu Email</label>
+                <input type="email" id="email" name="email" required
+                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+              </div>
+
+              <div>
+                <label for="phone" class="block font-bold mb-2">Seu WhatsApp</label>
+                <input type="tel" id="phone" name="phone" required
+                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+              </div>
+
+              <div>
+                <label for="message" class="block font-bold mb-2">Como posso te ajudar?</label>
+                <textarea id="message" name="message" rows="4" required
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+              </div>
+
+              <!-- Redirecionamento -->
+              <input type="hidden" name="_next" value="https://zzuko013.github.io/mayara-site/thankspage.html">
+
+              <button type="submit"
+                      class="w-full bg-primary hover:bg-opacity-90 text-white font-bold py-4 rounded-lg transition">
+                Agendar Minha Avaliação Gratuita
+              </button>
+            </form>
+	  </div>
+  </div>
 </div>
 </div>
 </div>
@@ -546,7 +571,14 @@
                 }
             });
         });
-        
+        <!-- 🔥 Script do menu mobile -->
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav-menu');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('hidden');
+  });
         // Smooth scrolling for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
