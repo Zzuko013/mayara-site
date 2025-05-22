@@ -539,6 +539,12 @@
 </div>
 </footer>
 <script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav-menu');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('hidden');
+  });
         // FAQ Accordion
         document.querySelectorAll('.faq-item').forEach(item => {
             const question = item.querySelector('h3');
@@ -569,14 +575,6 @@
                 }
             });
         });
-        <!-- 🔥 Script do menu mobile -->
-<script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const navMenu = document.getElementById('nav-menu');
-
-  menuToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('hidden');
-  });
         // Smooth scrolling for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
