@@ -148,6 +148,48 @@
 </div>
 </div>
 </section>
+	<!-- 🔥 Image Slider Section -->
+<section class="py-20 bg-white">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Evoluções Visuais</h2>
+      <p class="text-lg text-gray-600">Veja transformações e momentos que inspiram.</p>
+      <div class="w-24 h-1 bg-primary mx-auto mt-4"></div>
+    </div>
+    <div class="relative overflow-hidden rounded-lg shadow-lg max-w-4xl mx-auto">
+      <div id="sliderTrack" class="flex transition-transform duration-700">
+        <img src="images/slide1.jpg" class="w-full object-cover" alt="Slide 1">
+        <img src="images/slide2.jpg" class="w-full object-cover" alt="Slide 2">
+        <img src="images/slide3.jpg" class="w-full object-cover" alt="Slide 3">
+      </div>
+      <div class="absolute top-1/2 w-full flex justify-between transform -translate-y-1/2 px-4">
+        <button onclick="prevSlide()" class="bg-primary text-white px-4 py-2 rounded-full shadow-lg hover:bg-opacity-90">❮</button>
+        <button onclick="nextSlide()" class="bg-primary text-white px-4 py-2 rounded-full shadow-lg hover:bg-opacity-90">❯</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  let slideIndex = 0;
+  const track = document.getElementById("sliderTrack");
+  const slides = track.children;
+  const totalSlides = slides.length;
+
+  function showSlide(index) {
+    slideIndex = (index + totalSlides) % totalSlides;
+    track.style.transform = `translateX(-${slideIndex * 100}%)`;
+  }
+
+  function nextSlide() {
+    showSlide(slideIndex + 1);
+  }
+
+  function prevSlide() {
+    showSlide(slideIndex - 1);
+  }
+</script>
+
 <!-- Benefits Section -->
 <section class="py-20 bg-white" id="beneficios">
 <div class="container mx-auto px-6">
