@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>[Seu Nome] - Personal Trainer de Alta Performance</title>
+<script src="https://cdn.tailwindcss.com"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // COR PRIMÁRIA ALTERADA PARA AZUL
+                        primary: '#0D6EFD', 
+                        dark: '#262626',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .faq-item:hover {
+            border-left: 4px solid #0D6EFD; /* Cor alterada */
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+<header class="fixed w-full bg-white shadow-sm z-50">
+<div class="container mx-auto px-6 py-4">
+<div class="flex items-center justify-between">
+<div style="max-width: 180px; width: 50%; height: auto;">
+<img src="images/logo-personal-masculino.png"/>
+</div>
+<nav class="hidden md:flex space-x-8">
+<a class="font-medium hover:text-primary transition" href="#sobre">Sobre</a>
+<a class="font-medium hover:text-primary transition" href="#beneficios">Método</a>
+<a class="font-medium hover:text-primary transition" href="#depoimentos">Resultados</a>
+<a class="font-medium hover:text-primary transition" href="#faq">FAQ</a>
+<a class="font-medium hover:text-primary transition" href="#contato">Contato</a>
+</nav>
+<button class="md:hidden focus:outline-none">
+<i class="fas fa-bars text-2xl text-dark"></i>
+</button>
+</div>
+</div>
+</header>
+<section class="min-h-screen flex items-center pt-20">
+<div class="container mx-auto px-10 py-10 md:py-0 flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-12 md:mb-0">
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+<span class="text-dark">Chega de treinar sem rumo.</span><br/>
+<span class="text-primary">É hora de construir força.</span>
+</h1>
+<p class="text-xl text-gray-600 mb-8">
+                    Treinamento focado em homens que buscam performance de verdade. 
+                    Resultados sólidos para quem quer construir um físico forte e funcional.
+                </p>
+<div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+<a class="bg-primary hover:bg-opacity-90 text-white font-bold py-4 px-8 rounded-full text-center transition duration-300 transform hover:scale-105" href="#oferta">
+                        Quero agendar minha avaliação
+                    </a>
+<a class="border-2 border-dark hover:border-primary text-dark hover:text-primary font-bold py-4 px-8 rounded-full text-center transition duration-300" href="#depoimentos">
+                        Ver resultados de alunos
+                    </a>
+</div>
+</div>
+<div class="md:w-1/2 flex justify-center">
+<div class="relative">
+<img alt="Personal Trainer de Alta Performance" src="images/homem-treinando-hero.png"/>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-gray-50" id="sobre">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Conheça [Seu Nome]</h2>
+<div class="w-24 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/3 mb-4 md:mb-0 flex justify-center">
+<img alt="[Seu Nome]" class="shadow-lg" src="images/foto-perfil-personal.jpg"/>
+</div>
+<div class="md:w-2/3 md:pl-12">
+<h3 class="text-2xl font-bold mb-6">Especialista em hipertrofia e ganho de força</h3>
+<p class="text-lg mb-6">
+                        Com mais de X anos de experiência, nosso método ajuda homens a alcançarem seus objetivos de força e composição corporal. Formado em Educação Física e com especializações em biomecânica e treinamento de força, combinamos ciência e prática para extrair seu máximo potencial.
+                    </p>
+<p class="text-lg mb-6">
+                        O método vai além do treino: é uma abordagem completa que analisa sua rotina, metabolismo e metas para construir um plano de ação que entrega resultados visíveis e duradouros.
+                    </p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="bg-white p-4 rounded-lg shadow text-center">
+<div class="text-primary text-3xl mb-2">
+<i class="fas fa-user-graduate"></i>
+</div>
+<p class="font-bold">+X anos</p>
+<p class="text-sm">de experiência</p>
+</div>
+<div class="bg-white p-4 rounded-lg shadow text-center">
+<div class="text-primary text-3xl mb-2">
+<i class="fas fa-medal"></i>
+</div>
+<p class="font-bold">+XXX</p>
+<p class="text-sm">clientes transformados</p>
+</div>
+<div class="bg-white p-4 rounded-lg shadow text-center">
+<div class="text-primary text-3xl mb-2">
+<i class="fas fa-dumbbell"></i>
+</div>
+<p class="font-bold">100%</p>
+<p class="text-sm">personalizado</p>
+</div>
+<div class="bg-white p-4 rounded-lg shadow text-center">
+<div class="text-primary text-3xl mb-2">
+<i class="fas fa-bullseye"></i>
+</div>
+<p class="font-bold">Foco</p>
+<p class="text-sm">em resultado</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-white">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Evoluções Reais</h2>
+      <p class="text-lg text-gray-600">Veja as transformações de quem treina com foco.</p>
+      <div class="w-24 h-1 bg-primary mx-auto mt-4"></div>
+    </div>
+    <div class="relative overflow-hidden rounded-lg shadow-lg max-w-4xl mx-auto group">
+      <div id="sliderTrack" class="flex transition-all duration-700 ease-in-out">
+        <img src="images/antes-depois-aluno-1.jpg" class="w-full object-cover flex-shrink-0" alt="Evolução Aluno 1">
+        <img src="images/antes-depois-aluno-2.jpg" class="w-full object-cover flex-shrink-0" alt="Evolução Aluno 2">
+        <img src="images/antes-depois-aluno-3.jpg" class="w-full object-cover flex-shrink-0" alt="Evolução Aluno 3">
+      </div>
+      <div class="absolute top-1/2 w-full flex justify-between transform -translate-y-1/2 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <button onclick="prevSlide()" class="bg-primary text-white px-4 py-2 rounded-full shadow-lg hover:bg-opacity-90">❮</button>
+        <button onclick="nextSlide()" class="bg-primary text-white px-4 py-2 rounded-full shadow-lg hover:bg-opacity-90">❯</button>
+      </div>
+      <div class="absolute bottom-4 w-full flex justify-center space-x-2">
+        <span class="indicator w-3 h-3 bg-gray-400 rounded-full cursor-pointer" onclick="showSlide(0)"></span>
+        <span class="indicator w-3 h-3 bg-gray-400 rounded-full cursor-pointer" onclick="showSlide(1)"></span>
+        <span class="indicator w-3 h-3 bg-gray-400 rounded-full cursor-pointer" onclick="showSlide(2)"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  let slideIndex = 0;
+  const track = document.getElementById("sliderTrack");
+  const slides = track.children;
+  const indicators = document.querySelectorAll(".indicator");
+  const totalSlides = slides.length;
+  function showSlide(index) {
+    slideIndex = (index + totalSlides) % totalSlides;
+    track.style.transform = `translateX(-${slideIndex * 100}%)`;
+    updateIndicators();
+  }
+  function nextSlide() { showSlide(slideIndex + 1); }
+  function prevSlide() { showSlide(slideIndex - 1); }
+  function updateIndicators() {
+    indicators.forEach((dot, i) => {
+      dot.classList.toggle("bg-primary", i === slideIndex);
+      dot.classList.toggle("bg-gray-400", i !== slideIndex);
+    });
+  }
+  setInterval(nextSlide, 5000);
+  let startX = 0;
+  track.addEventListener("touchstart", (e) => { startX = e.touches[0].clientX; });
+  track.addEventListener("touchend", (e) => {
+    const endX = e.changedTouches[0].clientX;
+    if (startX - endX > 50) nextSlide();
+    if (endX - startX > 50) prevSlide();
+  });
+  showSlide(slideIndex);
+</script>
+
+<section class="py-20 bg-white" id="beneficios">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">O Método de Treinamento</h2>
+<p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Um programa completo para homens que buscam extrair o máximo de seu potencial físico.
+                </p>
+<div class="w-24 h-1 bg-primary mx-auto mt-4"></div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition">
+<div class="text-primary text-4xl mb-4">
+<i class="fas fa-chart-line"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Performance Máxima</h3>
+<p class="text-gray-600">
+                        Treinos planejados para aumentar sua força, resistência e capacidade atlética, quebrando seus recordes pessoais.
+                    </p>
+</div>
+<div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition">
+<div class="text-primary text-4xl mb-4">
+<i class="fas fa-dumbbell"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Hipertrofia e Força</h3>
+<p class="text-gray-600">
+                        Programas focados em ganho de massa muscular e força bruta, utilizando as técnicas mais eficientes para o desenvolvimento físico.
+                    </p>
+</div>
+<div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition">
+<div class="text-primary text-4xl mb-4">
+<i class="fas fa-calendar-check"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Periodização Inteligente</h3>
+<p class="text-gray-600">
+                        Seu treino evolui com você. Ajustamos cargas, volume e intensidade para garantir uma progressão constante, evitando platôs.
+                    </p>
+</div>
+<div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition">
+<div class="text-primary text-4xl mb-4">
+<i class="fas fa-utensils"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Nutrição Estratégica</h3>
+<p class="text-gray-600">
+                        Orientações para otimizar sua alimentação e suplementação, potencializando os resultados do treino e acelerando a recuperação.
+                    </p>
+</div>
+<div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition">
+<div class="text-primary text-4xl mb-4">
+<i class="fas fa-brain"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Mentalidade de Aço</h3>
+<p class="text-gray-600">
+                        Desenvolvimento de disciplina e consistência para superar limites, construir hábitos sólidos e manter os resultados a longo prazo.
+                    </p>
+</div>
+<div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition">
+<div class="text-primary text-4xl mb-4">
+<i class="fas fa-user-check"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Acompanhamento Direto</h3>
+<p class="text-gray-600">
+                        Acesso direto ao seu treinador para ajustes, dúvidas e feedbacks constantes que garantem a execução perfeita do plano.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-primary text-white" id="oferta">
+<div class="container mx-auto px-6">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Sessão de Avaliação Estratégica Gratuita</h2>
+<p class="text-xl mb-8">
+                    Na nossa primeira conversa, vamos mapear seus objetivos, identificar o que limita seu progresso e traçar um plano de ação para você.
+                </p>
+<div class="bg-white text-dark rounded-xl p-8 mb-8 shadow-lg">
+<h3 class="text-2xl font-bold mb-4">O que você vai receber:</h3>
+<ul class="text-left max-w-md mx-auto space-y-3">
+<li class="flex items-start">
+<i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+<span>Análise completa do seu condicionamento e objetivos</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+<span>Identificação de pontos fracos e oportunidades de ganho</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+<span>Direcionamento estratégico para seu treino e dieta</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+<span>Orientações práticas para começar a ter resultados</span>
+</li>
+</ul>
+</div>
+<p class="text-lg font-bold mb-8 bg-dark inline-block px-6 py-3 rounded-full">
+                    Vagas limitadas para garantir acompanhamento de alta qualidade
+                </p>
+<a class="bg-white text-primary hover:bg-gray-100 font-bold py-4 px-12 rounded-full inline-block transition duration-300 transform hover:scale-105" href="#contato">
+                    Agendar Minha Avaliação
+                </a>
+</div>
+</div>
+</section>
+<section class="py-20 bg-gray-50" id="depoimentos">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Resultados de Verdade</h2>
+<p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Veja o que meus alunos estão conquistando
+                </p>
+<div class="w-24 h-1 bg-primary mx-auto mt-4"></div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="testimonial-card bg-white p-8 rounded-xl shadow-sm transition duration-300">
+<div class="flex items-center mb-6">
+<img alt="Carlos" class="w-16 h-16 rounded-full object-cover border-2 border-primary" src="images/foto-aluno-1.jpg"/>
+<div class="ml-4">
+<h4 class="font-bold">Carlos - São Paulo</h4>
+<p class="text-sm text-gray-500">Engenheiro, 32 anos</p>
+</div>
+</div>
+<p class="text-gray-600 italic">
+                        “Eu treinava há anos e não saía do lugar. Achava que era minha genética. Com o plano certo, em 6 meses ganhei 5kg de massa magra e minha força no supino aumentou em 30%. É outro nível de treinamento, focado em resultado.”
+                    </p>
+<div class="mt-4 text-primary">
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+</div>
+</div>
+<div class="testimonial-card bg-white p-8 rounded-xl shadow-sm transition duration-300">
+<div class="flex items-center mb-6">
+<img alt="Rodrigo" class="w-16 h-16 rounded-full object-cover border-2 border-primary" src="images/foto-aluno-2.jpg"/>
+<div class="ml-4">
+<h4 class="font-bold">Rodrigo - Santos</h4>
+<p class="text-sm text-gray-500">Empresário, 41 anos</p>
+</div>
+</div>
+<p class="text-gray-600 italic">
+                        “Com a rotina de trabalho, eu precisava de um treino eficiente. O método foi direto ao ponto. Perdi 10% de gordura, ganhei definição e voltei a ter a disposição que eu não tinha há anos. O acompanhamento fez toda a diferença.”
+                    </p>
+<div class="mt-4 text-primary">
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+</div>
+</div>
+<div class="testimonial-card bg-white p-8 rounded-xl shadow-sm transition duration-300">
+<div class="flex items-center mb-6">
+<img alt="Marcos" class="w-16 h-16 rounded-full object-cover border-2 border-primary" src="images/foto-aluno-3.jpg"/>
+<div class="ml-4">
+<h4 class="font-bold">Marcos - Praia Grande</h4>
+<p class="text-sm text-gray-500">Estudante, 24 anos</p>
+</div>
+</div>
+<p class="text-gray-600 italic">
+                       “Eu era o famoso 'frango de academia'. Seguia treino de internet e não via resultado. O plano personalizado mudou o jogo. Aprendi a treinar de verdade, com técnica. Hoje, me sinto confiante e finalmente estou vendo o shape aparecer.”
+                    </p>
+<div class="mt-4 text-primary">
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<a class="inline-block bg-primary hover:bg-opacity-90 text-white font-bold py-4 px-8 rounded-full transition duration-300 transform hover:scale-105" href="#oferta">
+                    Eu Quero Resultados Assim
+                </a>
+</div>
+</div>
+</section>
+<section class="py-20 bg-white" id="faq">
+<div class="container mx-auto px-6 max-w-4xl">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Perguntas Frequentes</h2>
+<div class="w-24 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="space-y-6">
+<div class="faq-item bg-gray-50 p-6 rounded-lg border-l-4 border-white hover:border-primary cursor-pointer">
+<h3 class="text-xl font-bold mb-2 flex justify-between items-center">
+                        Como funciona o acompanhamento?
+                        <i class="fas fa-plus text-primary"></i>
+</h3>
+<div class="hidden answer text-gray-600">
+<p class="mb-4">
+                            O programa é 100% focado em você. Começamos com uma avaliação detalhada. A partir daí, criamos um plano exclusivo de treinos e orientações, com acesso direto a mim para ajustes semanais e feedback constante.
+                        </p>
+</div>
+</div>
+<div class="faq-item bg-gray-50 p-6 rounded-lg border-l-4 border-white hover:border-primary cursor-pointer">
+<h3 class="text-xl font-bold mb-2 flex justify-between items-center">
+                        Preciso treinar em academia?
+                        <i class="fas fa-plus text-primary"></i>
+</h3>
+<div class="hidden answer text-gray-600">
+<p class="mb-4">
+                            Não necessariamente. Desenvolvemos programas para treinos em casa, condomínio ou parques. O importante é a estratégia e a progressão, adaptadas aos equipamentos que você tem disponíveis.
+                        </p>
+</div>
+</div>
+<div class="faq-item bg-gray-50 p-6 rounded-lg border-l-4 border-white hover:border-primary cursor-pointer">
+<h3 class="text-xl font-bold mb-2 flex justify-between items-center">
+                        Quais resultados posso esperar?
+                        <i class="fas fa-plus text-primary"></i>
+</h3>
+<div class="hidden answer text-gray-600">
+<p class="mb-4">
+                            Os resultados dependem do seu ponto de partida e dedicação. Nossos clientes geralmente observam ganhos expressivos de força e massa muscular, redução do percentual de gordura e uma melhora significativa na performance e disposição.
+                        </p>
+</div>
+</div>
+<div class="faq-item bg-gray-50 p-6 rounded-lg border-l-4 border-white hover:border-primary cursor-pointer">
+<h3 class="text-xl font-bold mb-2 flex justify-between items-center">
+                        O plano é genérico ou realmente personalizado?
+                        <i class="fas fa-plus text-primary"></i>
+</h3>
+<div class="hidden answer text-gray-600">
+<p class="mb-4">
+                            Totalmente personalizado. Não usamos treinos prontos. Cada plano é criado do zero, considerando seu histórico, biotipo, rotina e, principalmente, seus objetivos específicos.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-gray-50" id="contato">
+  <div class="container mx-auto px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Pronto para Construir seu Melhor Físico?</h2>
+        <p class="text-xl text-gray-600">
+          Agende sua avaliação gratuita e dê o primeiro passo para o próximo nível.
+        </p>
+        <div class="w-24 h-1 bg-primary mx-auto mt-4"></div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="md:flex">
+          <div class="w-full md:w-1/2 bg-primary text-white p-8">
+            <h3 class="text-2xl font-bold mb-6">Informações de Contato</h3>
+            <div class="space-y-6">
+              <div class="flex">
+                <i class="fas fa-envelope mt-1 mr-4 text-xl"></i>
+                <div>
+                  <p class="font-bold">Email</p>
+                  <p>contato@seusite.com</p>
+                </div>
+              </div>
+              <div class="flex">
+                <i class="fas fa-phone-alt mt-1 mr-4 text-xl"></i>
+                <div>
+                  <p class="font-bold">WhatsApp</p>
+                  <p>(XX) XXXXX-XXXX</p>
+                </div>
+              </div>
+              <div class="flex">
+                <i class="fas fa-map-marker-alt mt-1 mr-4 text-xl"></i>
+                <div>
+                  <p class="font-bold">Atendimento</p>
+                  <p>Sua Cidade - Seu Estado</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-12">
+              <h4 class="text-xl font-bold mb-4">Siga nas Redes</h4>
+              <a href="https://www.instagram.com/seu-instagram/" target="_blank"
+                 class="inline-block bg-white text-primary font-bold py-3 px-6 rounded-full">
+                <i class="fab fa-instagram mr-2"></i> @seu-instagram
+              </a>
+            </div>
+          </div>
+          <div class="w-full p-8 md:p-12">
+            <form action="https://formsubmit.co/SEU-EMAIL-AQUI" method="POST" class="space-y-6">
+              <div>
+                <label for="name" class="block font-bold mb-2">Seu Nome</label>
+                <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+              </div>
+              <div>
+                <label for="email" class="block font-bold mb-2">Seu Email</label>
+                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+              </div>
+              <div>
+                <label for="phone" class="block font-bold mb-2">Seu WhatsApp</label>
+                <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+              </div>
+              <div>
+                <label for="message" class="block font-bold mb-2">Qual seu principal objetivo?</label>
+                <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+              </div>
+              <input type="hidden" name="_next" value="URL_DA_SUA_PAGINA_DE_OBRIGADO">
+              <button type="submit" class="w-full bg-primary hover:bg-opacity-90 text-white font-bold py-4 rounded-lg transition">
+                Agendar Minha Avaliação Gratuita
+              </button>
+            </form>
+	      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="bg-dark text-white py-12">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="mb-6 md:mb-0">
+<div style="max-width: 250px; width: 70%; height: auto;">
+<img src="images/logo-branca-masculino.png"/>
+</div>
+</div>
+<div class="flex space-x-6 mb-6 md:mb-0">
+<a class="text-gray-400 hover:text-white transition" href="https://www.instagram.com/seu-instagram/" target="_blank"><i class="fab fa-instagram text-xl"></i></a>
+<a class="text-gray-400 hover:text-white transition" href="https://api.whatsapp.com/send?phone=SEUNUMERO"><i class="fab fa-whatsapp text-xl"></i></a>
+<a class="text-gray-400 hover:text-white transition" href="mailto:contato@seusite.com"><i class="fas fa-envelope text-xl"></i></a>
+</div>
+<div class="text-sm text-gray-400">
+<a class="hover:text-white transition mr-4" href="#">Política de Privacidade</a>
+<a class="hover:text-white transition" href="#">Termos de Uso</a>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
+<p>© 2025 [Seu Nome] - Personal Trainer. Todos os direitos reservados.</p>
+<p class="mt-2">Desenvolvido com foco para homens que buscam alta performance.</p>
+</div>
+</div>
+</footer>
+<script>
+        document.querySelectorAll('.faq-item').forEach(item => {
+            const question = item.querySelector('h3');
+            question.addEventListener('click', () => {
+                const answer = item.querySelector('.answer');
+                const icon = question.querySelector('i');
+                const isOpen = answer.classList.contains('hidden');
+                document.querySelectorAll('.faq-item .answer').forEach(ans => ans.classList.add('hidden'));
+                document.querySelectorAll('.faq-item i').forEach(ic => { ic.classList.remove('fa-minus'); ic.classList.add('fa-plus'); });
+                if (isOpen) {
+                    answer.classList.remove('hidden');
+                    icon.classList.remove('fa-plus');
