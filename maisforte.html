@@ -515,14 +515,45 @@
 </div>
 </footer>
 <script>
+        // FAQ Accordion
         document.querySelectorAll('.faq-item').forEach(item => {
             const question = item.querySelector('h3');
+            const answer = item.querySelector('.answer');
+            const icon = question.querySelector('i');
+            
             question.addEventListener('click', () => {
-                const answer = item.querySelector('.answer');
-                const icon = question.querySelector('i');
                 const isOpen = answer.classList.contains('hidden');
-                document.querySelectorAll('.faq-item .answer').forEach(ans => ans.classList.add('hidden'));
-                document.querySelectorAll('.faq-item i').forEach(ic => { ic.classList.remove('fa-minus'); ic.classList.add('fa-plus'); });
+                
+                // Close all other FAQs
+                document.querySelectorAll('.faq-item').forEach(faq => {
+                    if (faq !== item) {
+                        faq.querySelector('.answer').classList.add('hidden');
+                        faq.querySelector('i').classList.remove('fa-minus');
+                        faq.querySelector('i').classList.add('fa-plus');
+                    }
+                });
+                
+                // Toggle current FAQ
                 if (isOpen) {
                     answer.classList.remove('hidden');
                     icon.classList.remove('fa-plus');
+                    icon.classList.add('fa-minus');
+                } else {
+                    answer.classList.add('hidden');
+                    icon.classList.remove('fa-minus');
+                    icon.classList.add('fa-plus');
+                }
+            });
+        });
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body></html>
